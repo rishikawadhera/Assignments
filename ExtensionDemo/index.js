@@ -1,7 +1,7 @@
 var expressExtension = require('express-integrator-extension');
 var functions = require('./functions');
 
-var systemToken = '4db33873b7ec47b58cdde694943ee94d' // Set this value to the systemToken of the stack created in integrator.io
+var systemToken = `${process.env.SYSTEM_TOKEN}`
 var options = {
   diy: functions,
   // connectors: { _connectorId: functions }, // for connectors
